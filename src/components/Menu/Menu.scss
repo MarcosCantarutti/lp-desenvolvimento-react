@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  gap: 5rem;
+
+  ul.navigation {
+    display: flex;
+    gap: 5rem;
+
+    li {
+      font-size: 1.2rem;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        transition: color 0.5s ease-in-out;
+        // &:hover {
+        //   color: aqua;
+        // }
+      }
+    }
+  }
+
+  ul.social {
+    display: flex;
+    gap: 2rem;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}

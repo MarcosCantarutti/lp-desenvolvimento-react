@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  background-color: #eaebe9;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
