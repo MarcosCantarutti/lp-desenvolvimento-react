@@ -1,13 +1,24 @@
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import './SlideContainer.scss';
+import Button from '../../components/Button/Button';
 
 // https://github.com/femioladeji/react-slideshow
 
-const spanStyle = {
-  padding: '20px',
-  // background: '#efefef',
-  color: '#000000',
+const pStyle = {
+  color: '#d4af37',
+  fontSize: '2.5rem',
+  textShadow: '1px 1px 2px #000',
+  textAlign: 'left',
+  padding: '20px 0',
+};
+
+const titleStyle = {
+  // padding: '20px',
+  color: '#d4af37',
+  fontSize: '5rem',
+  textShadow: '1px 1px 2px #000',
+  textAlign: 'left',
 };
 
 const divStyle = {
@@ -21,15 +32,25 @@ const divStyle = {
 const slideImages = [
   {
     url: '../../../bg.jpg',
-    caption: '',
+    title: 'LP DESENVOLVIMENTO',
+    content:
+      "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown prin.",
+    button: 'Saiba mais sobre nós',
   },
   {
-    url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
-    caption: '',
+    url: '../../../bg2.jpg',
+    title: 'Para você',
+    content:
+      "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",
+    button: 'Eu quero me desenvolver',
   },
   {
-    url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
-    caption: '',
+    url: '../../../bg3.jpg',
+    title: 'Para empresas',
+    content:
+      "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",
+
+    button: 'Eu quero desenvolver minha empresa',
   },
 ];
 
@@ -45,7 +66,11 @@ const Slideshow = () => {
                 backgroundImage: `url(${slideImage.url})`,
               }}
             >
-              <span style={spanStyle}>{slideImage.caption}</span>
+              <div className="main-container">
+                <h1 style={titleStyle}>{slideImage.title}</h1>
+                <p style={pStyle}>{slideImage.content}</p>
+                <Button className="golden large">{slideImage.button}</Button>
+              </div>
             </div>
           </div>
         ))}
