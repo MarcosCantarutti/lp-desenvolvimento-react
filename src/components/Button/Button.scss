@@ -1,0 +1,29 @@
+.large {
+}
+
+.small {
+}
+
+.golden {
+  background: linear-gradient(to right, #ffd700, #d4af37);
+  background-color: #d4af37;
+  color: #000000;
+  font-family: Trebuchet MS;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  padding: 14px 15px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.golden:hover {
+  background: linear-gradient(to right, #d9b960, #ffdb51);
+  background-color: #d9b960;
+}
+.golden:active {
+  transform: scale(0.95);
+}
