@@ -1,0 +1,26 @@
+@import '../../style/index.scss';
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  gap: 1rem;
+}
+
+.about-text {
+  text-align: left;
+  padding: 1rem;
+
+  h1 {
+    font-size: 4rem;
+    color: $text-metallic-gold;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+    color: $text-white;
+    margin-bottom: 2rem;
+  }
+}

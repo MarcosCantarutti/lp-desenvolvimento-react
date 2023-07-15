@@ -8,7 +8,7 @@ import Button from '../../components/Button/Button';
 const pStyle = {
   color: '#d4af37',
   fontSize: '2.5rem',
-  textShadow: '1px 1px 2px #000',
+  textShadow: '1px 1px 1px #000',
   textAlign: 'left',
   padding: '20px 0',
 };
@@ -16,8 +16,8 @@ const pStyle = {
 const titleStyle = {
   // padding: '20px',
   color: '#d4af37',
-  fontSize: '5rem',
-  textShadow: '1px 1px 2px #000',
+  fontSize: '5.5rem',
+  textShadow: '1px 1px 1px #000',
   textAlign: 'left',
 };
 
