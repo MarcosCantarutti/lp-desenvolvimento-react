@@ -2,6 +2,7 @@ import './Services.scss';
 
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
+import bg from '../../assets/bg.jpg';
 
 function Services() {
   return (
@@ -25,7 +26,7 @@ function Services() {
           <Button className="golden large">ENTRAR EM CONTATO</Button>
         </div>
         <div className="services-image">
-          <img src="../../../public/bg.jpg" alt="" />
+          <img src={bg} alt="" />
         </div>
       </div>
     </Container>

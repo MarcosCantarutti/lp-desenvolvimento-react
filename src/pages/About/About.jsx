@@ -2,7 +2,7 @@ import './About.scss';
 
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
-
+import bg from '../../assets/bg.jpg';
 function About() {
   const proprietes = {
     duration: 5000,
@@ -15,7 +15,7 @@ function About() {
     <Container className="main-container">
       <div className="about-container">
         <div className="about-image">
-          <img src="../../../public/bg.jpg" alt="" />
+          <img src={bg} alt="" />
         </div>
         <div className="about-text">
           <h1>QUEM SOMOS?</h1>

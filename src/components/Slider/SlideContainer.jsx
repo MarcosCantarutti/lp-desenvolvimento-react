@@ -2,6 +2,9 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import './SlideContainer.scss';
 import Button from '../../components/Button/Button';
+import bg from '../../assets/bg.jpg';
+import bg2 from '../../assets/bg2.jpg';
+import bg3 from '../../assets/bg3.jpg';
 
 // https://github.com/femioladeji/react-slideshow
 
@@ -31,21 +34,21 @@ const divStyle = {
 };
 const slideImages = [
   {
-    url: '../../../bg.jpg',
+    url: bg,
     title: 'LP DESENVOLVIMENTO',
     content:
       "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown prin.",
     button: 'Saiba mais sobre nós',
   },
   {
-    url: '../../../bg2.jpg',
+    url: bg2,
     title: 'Para você',
     content:
       "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",
     button: 'Eu quero me desenvolver',
   },
   {
-    url: '../../../bg3.jpg',
+    url: bg3,
     title: 'Para empresas',
     content:
       "lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.",

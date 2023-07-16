@@ -2,6 +2,7 @@ import './Questions.scss';
 
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
+import bg from '../../assets/bg.jpg';
 
 function Questions() {
   return (
@@ -64,7 +65,7 @@ function Questions() {
           {/* <Button className="golden large">ENTRAR EM CONTATO</Button> */}
         </div>
         <div className="questions-image">
-          <img src="../../../public/bg.jpg" alt="" />
+          <img src={bg} alt="" />
         </div>
       </div>
     </Container>
