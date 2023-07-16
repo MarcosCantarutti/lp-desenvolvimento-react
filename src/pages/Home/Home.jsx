@@ -11,7 +11,7 @@ function Home() {
     arrows: false,
   };
   return (
-    <Container className="main-container">
+    <Container className="main-container container-no-padding-top">
       <Slideshow {...proprietes}></Slideshow>
     </Container>
   );

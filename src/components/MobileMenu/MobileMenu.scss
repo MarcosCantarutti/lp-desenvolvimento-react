@@ -1,6 +1,7 @@
+@import '../../style/index.scss';
 .mobile-container {
   padding: 5rem 10rem;
-  background-color: #000;
+  background-color: $bg-dark;
   position: fixed;
   right: 0;
   top: 8.5rem;
@@ -10,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   border-radius: 1rem;
-  transition: 0.1s ease-in-out;
+  transition: 0.1s ease;
 
   .mobile-navigation {
     display: flex;

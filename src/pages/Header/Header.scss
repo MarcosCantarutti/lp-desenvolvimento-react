@@ -1,3 +1,4 @@
+@import '../../style/index.scss';
 header {
   min-height: 10rem;
   width: 100%;
@@ -8,10 +9,11 @@ header {
   align-items: center;
   justify-content: space-around;
   font-weight: bold;
-  background-color: transparent;
+  background-color: $bg-dark;
+  border-bottom: 1px solid $text-metallic-gold;
 
   img {
-    transform: scale(1.3);
+    transform: scale(1);
     max-width: 30rem;
   }
 

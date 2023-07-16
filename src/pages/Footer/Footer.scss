@@ -1,0 +1,31 @@
+@import '../../style/index.scss';
+.footer-container {
+  display: grid;
+  grid-template-rows: 2rem 2rem;
+  align-items: center;
+  justify-content: center;
+
+  // text-shadow: rgb(255, 255, 255) 1px 1px 1px;
+  text-align: center;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  svg {
+    color: $text-dark;
+  }
+
+  span {
+    font-size: 1.3rem;
+    color: $text-dark;
+    a {
+      text-decoration: none;
+      color: $text-dark;
+      font-weight: bold;
+    }
+  }
+}
