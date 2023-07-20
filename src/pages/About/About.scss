@@ -24,3 +24,12 @@
     margin-bottom: 2rem;
   }
 }
+
+.about-image {
+  img {
+    width: 100%; /* Ajusta a imagem para ocupar todo o espaço do container */
+    height: 100%;
+    object-fit: cover; /* Redimensiona a imagem para preencher o container mantendo sua proporção */
+    border-radius: 40px 999em 999em 40px; /* Define o mesmo raio de arredondamento da borda do container */
+  }
+}

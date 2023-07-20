@@ -5,7 +5,7 @@ import Container from '../../components/Container/Container';
 
 function Footer() {
   return (
-    <Container className="main-container golden-bg">
+    <Container className="main-container black-bg">
       <div className="footer-container">
         <div>
           <span>

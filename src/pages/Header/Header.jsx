@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.scss';
 import { List } from '@phosphor-icons/react';
 import MobileMenu from '../../components/MobileMenu/MobileMenu';
@@ -10,8 +10,23 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const threshold = 100; // Define o ponto em que a cor de fundo do menu deve mudar
+      setIsScrolled(scrollPosition > threshold);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className={` ${isScrolled ? 'scrolled' : ''}`}>
       <img src={logo} alt="logo" />
       <Menu />
       <List className="mobile-menu" onClick={toggleMenu} size={32} />

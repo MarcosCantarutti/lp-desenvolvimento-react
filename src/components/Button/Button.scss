@@ -2,7 +2,7 @@ button {
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  transition: ease-in-out 0.25s;
+  transition: color 0.3s ease-in-out;
 
   svg {
     margin-right: 1rem;
@@ -33,6 +33,7 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: color 0.3s ease-in-out;
 }
 .golden:hover {
   background: linear-gradient(to right, #d9b960, #ffdb51);

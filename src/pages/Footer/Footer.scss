@@ -4,9 +4,14 @@
   grid-template-rows: 2rem 2rem;
   align-items: center;
   justify-content: center;
+  padding-top: 1rem;
 
   // text-shadow: rgb(255, 255, 255) 1px 1px 1px;
   text-align: center;
+  border-top: 2px solid $text-metallic-gold;
+  // border-radius: 10px;
+  max-width: 85%;
+  margin: 0 auto;
 
   div {
     display: flex;
@@ -16,15 +21,15 @@
   }
 
   svg {
-    color: $text-dark;
+    color: $text-white;
   }
 
   span {
     font-size: 1.3rem;
-    color: $text-dark;
+    color: $text-white;
     a {
       text-decoration: none;
-      color: $text-dark;
+      color: $text-white;
       font-weight: bold;
     }
   }

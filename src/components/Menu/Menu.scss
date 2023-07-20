@@ -3,7 +3,6 @@ nav {
   display: flex;
   gap: 5rem;
 
-  
   ul.navigation {
     display: flex;
     gap: 5rem;
@@ -17,10 +16,10 @@ nav {
         text-transform: uppercase;
         color: $text-metallic-gold;
         font-weight: bold;
-        transition: color 0.5s ease-in-out;
-        // &:hover {
-        //   color: aqua;
-        // }
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: $bg-gold;
+        }
       }
     }
   }
@@ -33,6 +32,10 @@ nav {
       text-decoration: none;
       color: $text-metallic-gold;
       font-weight: bold;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: $bg-gold;
+      }
     }
   }
 }
