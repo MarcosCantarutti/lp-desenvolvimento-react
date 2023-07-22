@@ -7,7 +7,7 @@ import bg from '../../assets/bg.jpg';
 function Services() {
   return (
     <Container className="main-container">
-      <div className="services-container">
+      <div className="services-container" id="services">
         <div className="services-text">
           <h1>Nossa cultura impulsiona o que fazemos</h1>
           <p>

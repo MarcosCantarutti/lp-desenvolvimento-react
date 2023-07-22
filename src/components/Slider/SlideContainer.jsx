@@ -70,9 +70,11 @@ const Slideshow = () => {
               }}
             >
               <div className="main-container">
-                <h1 style={titleStyle}>{slideImage.title}</h1>
-                <p style={pStyle}>{slideImage.content}</p>
-                <Button className="golden large">{slideImage.button}</Button>
+                <div className="home-container">
+                  <h1 style={titleStyle}>{slideImage.title}</h1>
+                  <p style={pStyle}>{slideImage.content}</p>
+                  <Button className="golden large">{slideImage.button}</Button>
+                </div>
               </div>
             </div>
           </div>

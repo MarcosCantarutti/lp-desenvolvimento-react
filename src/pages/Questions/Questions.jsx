@@ -6,7 +6,7 @@ import bg from '../../assets/bg.jpg';
 
 function Questions() {
   return (
-    <Container className="main-container white-bg">
+    <Container className="main-container white-bg" id="questions">
       <h1 className="questions-title">Perguntas frequentes</h1>
       <div className="questions-container">
         <div className="questions-text">

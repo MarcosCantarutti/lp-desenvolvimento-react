@@ -13,7 +13,7 @@ import {
 function Contact() {
   return (
     <Container className="main-container">
-      <div className="contact-container">
+      <div className="contact-container" id="contact">
         <div className="contact-text">
           <h1>Entre em contato com a gente!</h1>
           <p>

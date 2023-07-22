@@ -9,6 +9,9 @@ function Header() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  const handleChildData = (menuOpen) => {
+    toggleMenu(menuOpen);
+  };
 
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -30,7 +33,10 @@ function Header() {
       <img src={logo} alt="logo" />
       <Menu />
       <List className="mobile-menu" onClick={toggleMenu} size={32} />
-      <MobileMenu className={` ${menuOpen ? 'hidden' : 'visible'}`} />
+      <MobileMenu
+        className={` ${menuOpen ? 'hidden' : 'visible'}`}
+        onDataReceived={handleChildData}
+      />
     </header>
   );
 }

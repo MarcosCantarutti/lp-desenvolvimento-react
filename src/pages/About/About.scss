@@ -33,3 +33,20 @@
     border-radius: 40px 999em 999em 40px; /* Define o mesmo raio de arredondamento da borda do container */
   }
 }
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-container .about-text {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

@@ -1,3 +1,32 @@
 .default-nav {
   display: none !important;
 }
+
+// .home-container {
+//   max-width: 50%;
+//   margin: 0 auto;
+// }
+
+// @media (max-width: 768px) {
+//   .home-container {
+//     h1 {
+//       font-size: 4rem !important;
+//     }
+
+//     p {
+//       font-size: 2rem;
+//     }
+//   }
+// }
+
+@media (max-width: 640px) {
+  .home-container {
+    h1 {
+      font-size: 3.5rem !important;
+    }
+
+    p {
+      font-size: 1.8rem !important;
+    }
+  }
+}

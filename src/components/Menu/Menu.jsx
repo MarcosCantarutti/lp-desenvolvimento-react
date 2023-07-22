@@ -6,19 +6,19 @@ function Menu() {
       <ul className="navigation">
         <li>
           {' '}
-          <a href="http://">Home</a>{' '}
+          <a href="#home">Home</a>{' '}
         </li>
         <li>
           {' '}
-          <a href="http://">Sobre</a>{' '}
+          <a href="#about">Sobre</a>{' '}
         </li>
         <li>
           {' '}
-          <a href="http://">Serviços</a>{' '}
+          <a href="#services">Serviços</a>{' '}
         </li>
         <li>
           {' '}
-          <a href="http://">Contato</a>{' '}
+          <a href="#contact">Contato</a>{' '}
         </li>
       </ul>
 

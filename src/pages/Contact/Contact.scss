@@ -55,3 +55,46 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-text {
+    padding: 2rem;
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .questions-title {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .contact-text {
+    padding: 2rem;
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  .contact-networks {
+    div {
+      a {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

@@ -13,7 +13,7 @@ function About() {
   };
   return (
     <Container className="main-container">
-      <div className="about-container">
+      <div className="about-container" id="about">
         <div className="about-image">
           <img src={bg} alt="" />
         </div>
