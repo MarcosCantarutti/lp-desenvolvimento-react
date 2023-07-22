@@ -1,4 +1,5 @@
 import { Slide } from 'react-slideshow-image';
+import { Fade } from 'react-awesome-reveal';
 import 'react-slideshow-image/dist/styles.css';
 import './SlideContainer.scss';
 import Button from '../../components/Button/Button';
@@ -60,26 +61,30 @@ const slideImages = [
 const Slideshow = () => {
   return (
     <div className="slide-container">
-      <Slide>
-        {slideImages.map((slideImage, index) => (
-          <div key={index}>
-            <div
-              style={{
-                ...divStyle,
-                backgroundImage: `url(${slideImage.url})`,
-              }}
-            >
-              <div className="main-container">
-                <div className="home-container">
-                  <h1 style={titleStyle}>{slideImage.title}</h1>
-                  <p style={pStyle}>{slideImage.content}</p>
-                  <Button className="golden large">{slideImage.button}</Button>
+      <Fade cascade>
+        <Slide>
+          {slideImages.map((slideImage, index) => (
+            <div key={index}>
+              <div
+                style={{
+                  ...divStyle,
+                  backgroundImage: `url(${slideImage.url})`,
+                }}
+              >
+                <div className="main-container">
+                  <div className="home-container">
+                    <h1 style={titleStyle}>{slideImage.title}</h1>
+                    <p style={pStyle}>{slideImage.content}</p>
+                    <Button className="golden large">
+                      {slideImage.button}
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </Slide>
+          ))}
+        </Slide>
+      </Fade>
     </div>
   );
 };
