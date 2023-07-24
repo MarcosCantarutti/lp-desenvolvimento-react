@@ -1,8 +1,6 @@
 import './Questions.scss';
 import { Fade } from 'react-awesome-reveal';
-import Container from '../../components/Container/Container';
-import Button from '../../components/Button/Button';
-import bg from '../../assets/bg.jpg';
+import Container from '../../../components/Container/Container';
 
 function Questions() {
   return (

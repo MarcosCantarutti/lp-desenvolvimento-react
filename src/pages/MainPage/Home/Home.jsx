@@ -1,6 +1,6 @@
 import './Home.scss';
-import Slideshow from '../../components/Slider/SlideContainer';
-import Container from '../../components/Container/Container';
+import Slideshow from '../../../components/Slider/SlideContainer';
+import Container from '../../../components/Container/Container';
 
 function Home() {
   const proprietes = {

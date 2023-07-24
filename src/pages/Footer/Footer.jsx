@@ -1,12 +1,10 @@
 import './Footer.scss';
-// import { Copyright } from '@phosphor-icons/react';
-
 import Container from '../../components/Container/Container';
 
 function Footer() {
   return (
     <Container className="main-container black-bg">
-      <div className="footer-container">
+      <footer className="footer-container">
         <div>
           <span>
             {' '}
@@ -20,7 +18,7 @@ function Footer() {
             <a href="http://www.marcoscantarutti.com.br">Marcos Cantarutti</a>
           </span>
         </div>
-      </div>
+      </footer>
     </Container>
   );
 }

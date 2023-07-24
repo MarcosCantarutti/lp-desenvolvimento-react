@@ -1,7 +1,7 @@
 import './Contact.scss';
 import { Fade } from 'react-awesome-reveal';
-import Container from '../../components/Container/Container';
-import Button from '../../components/Button/Button';
+import Container from '../../../components/Container/Container';
+import Button from '../../../components/Button/Button';
 import {
   EnvelopeSimple,
   TiktokLogo,
