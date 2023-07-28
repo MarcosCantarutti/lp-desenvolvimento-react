@@ -1,0 +1,24 @@
+.main-consultoria {
+  width: 100vw;
+  padding: 15rem;
+  margin: 0 auto;
+  .cards-container {
+    // max-width: 175rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 15rem;
+    // padding: 5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main-consultoria {
+    padding: 15rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+  }
+}

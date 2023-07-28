@@ -1,16 +1,15 @@
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import MainConsultoria from './MainConsultoria/MainConsultoria';
 
-function OtherPage() {
+function Consultoria() {
   return (
     <>
       <Header></Header>
-      <main>
-        
-      </main>
+      <MainConsultoria />
       <Footer></Footer>
     </>
   );
 }
 
-export default OtherPage;
+export default Consultoria;

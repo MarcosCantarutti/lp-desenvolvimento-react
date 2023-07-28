@@ -2,7 +2,7 @@ import './style/index.scss';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/MainPage/MainPage';
-import OtherPage from './pages/OtherPage/OtherPage';
+import Consultoria from './pages/Consultoria/Consultoria';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<MainPage />} />
-          <Route path="/teste" element={<OtherPage />} />
+          <Route path="/consultoria" element={<Consultoria />} />
           {/* <Route component={NotFound} /> */}
         </Routes>
       </BrowserRouter>
