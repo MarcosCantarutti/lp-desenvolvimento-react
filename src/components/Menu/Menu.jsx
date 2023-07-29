@@ -14,7 +14,7 @@ function Menu() {
         </li>
         <li>
           {' '}
-          <a href="#services">Serviços</a>{' '}
+          <a href="/consultoria">Consultoria</a>{' '}
         </li>
         <li>
           {' '}
