@@ -1,7 +1,8 @@
 .main-consultoria {
   width: 100vw;
-  padding: 15rem;
+
   margin: 0 auto;
+  padding: 20rem 30rem;
   .cards-container {
     // max-width: 175rem;
     margin: 0 auto;
@@ -11,6 +12,19 @@
     // padding: 5rem;
   }
 }
+
+@media screen and (max-width: 1350px) {
+  .main-consultoria {
+    padding: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+  }
+}
+
 @media screen and (max-width: 700px) {
   .main-consultoria {
     padding: 15rem 5rem;
