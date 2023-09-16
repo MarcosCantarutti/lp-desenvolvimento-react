@@ -1,6 +1,7 @@
 {
   "routes": [
     { "src": "/", "dest": "/" },
-    { "src": "/consultoria", "dest": "/" }
+    { "src": "/consultoria", "dest": "/" },
+    { "src": "/(.*)", "status": 404, "dest": "pages/NotFound/NotFound.jsx" }
   ]
 }
