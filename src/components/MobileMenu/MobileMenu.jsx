@@ -12,25 +12,25 @@ function MobileMenu(props) {
       <ul className="mobile-navigation">
         <li>
           {' '}
-          <a href="#home" onClick={sendDataToParent}>
+          <a href="./#home" onClick={sendDataToParent}>
             Home
           </a>{' '}
         </li>
         <li>
           {' '}
-          <a href="#about" onClick={sendDataToParent}>
+          <a href="./#about" onClick={sendDataToParent}>
             Sobre
           </a>{' '}
         </li>
         <li>
           {' '}
-          <a href="#services" onClick={sendDataToParent}>
+          <a href="/consultoria" onClick={sendDataToParent}>
             Serviços
           </a>{' '}
         </li>
         <li>
           {' '}
-          <a href="#contact" onClick={sendDataToParent}>
+          <a href="./#contact" onClick={sendDataToParent}>
             Contato
           </a>{' '}
         </li>
