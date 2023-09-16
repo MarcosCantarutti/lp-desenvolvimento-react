@@ -6,11 +6,11 @@ function Menu() {
       <ul className="navigation">
         <li>
           {' '}
-          <a href="#home">Home</a>{' '}
+          <a href="./#home">Home</a>{' '}
         </li>
         <li>
           {' '}
-          <a href="#about">Sobre</a>{' '}
+          <a href="./#about">Sobre</a>{' '}
         </li>
         <li>
           {' '}
@@ -18,7 +18,7 @@ function Menu() {
         </li>
         <li>
           {' '}
-          <a href="#contact">Contato</a>{' '}
+          <a href="./#contact">Contato</a>{' '}
         </li>
       </ul>
 
