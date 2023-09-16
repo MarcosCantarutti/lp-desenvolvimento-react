@@ -11,10 +11,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<MainPage />} />
-          <Route path="/consultoria" element={<Consultoria />} />
+          <Route exact path="/" element={<WorkingProgress />} />
+          {/* <Route path="/consultoria" element={<Consultoria />} />
           <Route path="/working" element={<WorkingProgress />} />
-          <Route path="/notfound" element={<NotFound />} />
+          <Route path="/notfound" element={<NotFound />} /> */}
         </Routes>
       </BrowserRouter>
     </>
