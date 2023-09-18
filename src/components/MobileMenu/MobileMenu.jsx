@@ -18,14 +18,14 @@ function MobileMenu(props) {
         </li>
         <li>
           {' '}
-          <a href="./#about" onClick={sendDataToParent}>
-            Sobre
+          <a href="./consultoria" onClick={sendDataToParent}>
+            Soluções Empresariais
           </a>{' '}
         </li>
         <li>
           {' '}
-          <a href="/consultoria" onClick={sendDataToParent}>
-            Serviços
+          <a href="" onClick={sendDataToParent}>
+            Desenvolvimento Humano
           </a>{' '}
         </li>
         <li>

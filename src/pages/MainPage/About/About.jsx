@@ -18,19 +18,17 @@ function About() {
             <img src={bg} alt="" />
           </div>
           <div className="about-text">
-            <h1>QUEM SOMOS?</h1>
+            <h1>Nossa Consultoria</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              voluptate dolores, molestias tenetur ratione velit consequuntur
-              nemo illum qui necessitatibus suscipit quibusdam id. Quo pariatur
-              blanditiis quibusdam nemo officiis adipisci!
+              Nossos especialistas são multidisciplinares com formações sólidas
+              em administração de empresas, psicologia, mba em gestão de
+              pessoas, business coaching, gestão por competência, análise
+              comportamental e diversas outras formações complementares.
+              <br />
+              Combinando conhecimentos teóricos e uma vasta e sólida experiência
+              em grandes empresas.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              voluptate dolores, molestias tenetur ratione velit consequuntur
-              nemo illum qui necessitatibus suscipit quibusdam id. Quo pariatur
-              blanditiis quibusdam nemo officiis adipisci!
-            </p>
+
             {/* <Button className="golden large">ENTRAR EM CONTATO</Button> */}
           </div>
         </div>

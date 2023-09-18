@@ -10,11 +10,11 @@ function Menu() {
         </li>
         <li>
           {' '}
-          <a href="./#about">Sobre</a>{' '}
+          <a href="./consultoria">Soluções Empresariais</a>{' '}
         </li>
         <li>
           {' '}
-          <a href="/consultoria">Consultoria</a>{' '}
+          <a href="">Desenvolvimento Humano</a>{' '}
         </li>
         <li>
           {' '}
