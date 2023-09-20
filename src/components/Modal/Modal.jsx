@@ -16,6 +16,7 @@ const Modal = ({ id, title, content, onClose }) => {
       window.removeEventListener('click', handleOutsideClick);
     };
   }, [onClose]);
+  let arrLinha = content.split('\n');
 
   return (
     <div className="modal-overlay">
@@ -26,7 +27,11 @@ const Modal = ({ id, title, content, onClose }) => {
             <X size={16} />
           </button>
         </div>
-        <div className="modal-content">{content}</div>
+        <div className="modal-content" style={{ marginTop: '5px' }}>
+          {arrLinha.map((linha, index) => (
+            <p key={index}>{linha}</p>
+          ))}
+        </div>
 
         <button className="contact-button">
           <WhatsappLogo size={32} />

@@ -30,7 +30,9 @@ function Header() {
 
   return (
     <header className={` ${isScrolled ? 'scrolled' : ''}`}>
-      <img src={logo} alt="logo" />
+      <a href="./">
+        <img src={logo} alt="logo" />
+      </a>
       <Menu />
       <List className="mobile-menu" onClick={toggleMenu} size={32} />
       <MobileMenu

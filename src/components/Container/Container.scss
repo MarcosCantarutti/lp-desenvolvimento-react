@@ -26,11 +26,13 @@
     @media (min-width: 768px) {
       .main-container {
         max-width: 768px;
+        padding: 0.5rem;
       }
     }
-    @media (min-width: 640px) {
+    @media (max-width: 640px) {
       .main-container {
         max-width: 640px;
+        padding: 0.5rem;
       }
     }
   }
