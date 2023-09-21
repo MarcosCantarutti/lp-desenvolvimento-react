@@ -51,3 +51,22 @@ button {
 .golden:active {
   transform: scale(0.95);
 }
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: #d4af37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &:hover {
+    color: #fff;
+    background-color: transparent;
+  }
+}
