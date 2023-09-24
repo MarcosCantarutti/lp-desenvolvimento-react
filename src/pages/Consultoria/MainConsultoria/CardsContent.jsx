@@ -16,6 +16,24 @@ function cardsContent() {
     },
     {
       id: uuidv4(),
+      title: `Gestão de Pessoas para sua Empresa`,
+      content: `Oferecemos serviços in loco de Gestão de Pessoas para empresas que desejam terceirizar este pilar importante em suas operações.`,
+      modalTitle: 'Gestão de Pessoas para sua Empresa',
+      modalContent: `Com soluções que incluem recrutamento, desenvolvimento de equipes, gestão de desempenho, desenvolvimento de lideranças e resolução de conflitos, assumimos a responsabilidade e atuamos diretamente com sua força de trabalho. Garantimos benefícios tangíveis, como maior eficiência, menor rotatividade e colaboradores especializados. Ao terceirizar a gestão de pessoas conosco, sua empresa pode focar em suas metas centrais e permitir a otimização de recursos humanos de forma estratégica.
+
+      POR QUE INVESTIR?
+      
+      - Aumento da produtividade e eficiência.
+      - Construção de uma cultura organizacional forte
+      - Redução de custos com mão de obra
+      - Processos de RH e DP com eficiência
+      - Redução da rotatividade de funcionários.
+      - Maior satisfação dos colaboradores.
+      - Desenvolvimento de uma equipe altamente evoluída.
+      - Alinhamento dos objetivos da empresa com os de sua equipe.`,
+    },
+    {
+      id: uuidv4(),
       title: `DIAGNÓSTICO ORGANIZACIONAL`,
       content: `O Objetivo do diagnóstico empresarial é identifica fatores para melhorar o desempenho e o crescimento da empresa.`,
       modalTitle: 'DIAGNÓSTICO ORGANIZACIONAL',

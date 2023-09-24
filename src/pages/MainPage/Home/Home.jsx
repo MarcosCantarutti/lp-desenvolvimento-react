@@ -17,9 +17,8 @@ function Home() {
         <div className="home-content">
           <h1>Qual o seu desafio de hoje?</h1>
           <p>
-            VOCÊ ESTÁ PRONTO PARA LEVAR A GESTÃO DE PESSOAS DE SUA EMPRESA PARA
-            O PRÓXIMO NÍVEL E COLHER OS BENEFÍCIOS DE UMA EQUIPE ALTAMENTE
-            ENGAJADA E EFICAZ?
+            Faça a sua área de Recursos Humanos um pilar estratégico de
+            resultados, e desenvolta uma Gestão de Pessoas eficiente.
           </p>
           <Button className="golden large">FALE COM O ESPECIALISTA</Button>
         </div>
