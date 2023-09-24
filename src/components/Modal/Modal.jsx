@@ -29,7 +29,9 @@ const Modal = ({ id, title, content, onClose }) => {
         </div>
         <div className="modal-content" style={{ marginTop: '5px' }}>
           {arrLinha.map((linha, index) => (
-            <p key={index}>{linha}</p>
+            <p className="text" key={index}>
+              {linha}
+            </p>
           ))}
         </div>
 

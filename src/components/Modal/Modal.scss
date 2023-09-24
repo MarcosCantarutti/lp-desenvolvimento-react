@@ -56,10 +56,15 @@
 /* Estilos para o título do modal */
 .modal-header h2 {
   font-size: 2.5rem;
+  color: $bg-gold;
 }
 
 .modal-content {
   font-size: 1.8rem;
+}
+
+.text {
+  margin-bottom: 2rem;
 }
 
 /* Estilos responsivos para dispositivos móveis */
