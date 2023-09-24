@@ -3,11 +3,15 @@ import React, { useState, useEffect } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import Container from '../../../components/Container/Container';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import time from '../../../assets/time.svg';
-import equipe from '../../../assets/equipe.svg';
-import eficiencia from '../../../assets/eficiencia.svg';
-import recursos from '../../../assets/recursos.svg';
+// import time from '../../../assets/time.svg';
+// import equipe from '../../../assets/equipe.svg';
+// import eficiencia from '../../../assets/eficiencia.svg';
+// import recursos from '../../../assets/recursos.svg';
 import futuro from '../../../assets/futuro.svg';
+import one from '../../../assets/1.png';
+import two from '../../../assets/2.png';
+import three from '../../../assets/3.png';
+import four from '../../../assets/4.png';
 // Import Swiper styles
 import 'swiper/css';
 
@@ -103,16 +107,14 @@ function Questions() {
         </Swiper>
       </Fade>
       <Fade direction={'top'} triggerOnce>
-        <h1 className="questions-title">
-          QUAIS SÃO OS POSSÍVEIS RETORNOS PARA SUA EMPRESA?
-        </h1>
+        <h1 className="questions-title">RETORNOS PARA SUA EMPRESA</h1>
         <Swiper spaceBetween={50} slidesPerView={tamanhoDaPagina}>
           <SwiperSlide>
             {' '}
             <div className="questions-container-alternative">
               <div className="container">
                 <div className="img-container">
-                  <img src={equipe} alt="equipe" />
+                  <img src={one} alt="equipe" />
                 </div>
                 <h2>Equipe Altamente Engajada</h2>
                 <p>
@@ -126,7 +128,7 @@ function Questions() {
             <div className="questions-container-alternative">
               <div className="container">
                 <div className="img-container">
-                  <img src={eficiencia} alt="eficiencia" />
+                  <img src={two} alt="eficiencia" />
                 </div>
                 <h2> Aumento da Eficiência</h2>
                 <p>
@@ -140,7 +142,7 @@ function Questions() {
             <div className="questions-container-alternative">
               <div className="container">
                 <div className="img-container">
-                  <img src={time} alt="time" />
+                  <img src={three} alt="time" />
                 </div>
                 <h2>Ambiente de Trabalho Positivo</h2>
                 <p>
@@ -156,7 +158,7 @@ function Questions() {
               {' '}
               <div className="container">
                 <div className="img-container">
-                  <img src={recursos} alt="recursos" />
+                  <img src={four} alt="recursos" />
                 </div>
                 <h2>Otimização de Recursos</h2>
                 <p>
