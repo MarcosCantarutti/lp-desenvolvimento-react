@@ -6,9 +6,9 @@
   .cards-container {
     // max-width: 175rem;
     margin: 0 auto;
-    display: flex;
-    // grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    // gap: 15rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 15rem;
     // padding: 5rem;
   }
 }
@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     .cards-container {
-      // grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     }
   }
 }
