@@ -112,7 +112,6 @@ function Questions() {
             <div className="questions-container-alternative">
               <div className="container">
                 <div className="img-container">
-                  <h1>01</h1>
                   <img src={equipe} alt="equipe" />
                 </div>
                 <h2>Equipe Altamente Engajada</h2>
@@ -127,7 +126,6 @@ function Questions() {
             <div className="questions-container-alternative">
               <div className="container">
                 <div className="img-container">
-                  <h1>02</h1>
                   <img src={eficiencia} alt="eficiencia" />
                 </div>
                 <h2> Aumento da Eficiência</h2>
@@ -142,7 +140,6 @@ function Questions() {
             <div className="questions-container-alternative">
               <div className="container">
                 <div className="img-container">
-                  <h1>03</h1>
                   <img src={time} alt="time" />
                 </div>
                 <h2>Ambiente de Trabalho Positivo</h2>
@@ -159,7 +156,6 @@ function Questions() {
               {' '}
               <div className="container">
                 <div className="img-container">
-                  <h1>04</h1>
                   <img src={recursos} alt="recursos" />
                 </div>
                 <h2>Otimização de Recursos</h2>
@@ -175,7 +171,6 @@ function Questions() {
             <div className="questions-container-alternative">
               <div className="container">
                 <div className="img-container">
-                  <h1>05</h1>
                   <img src={futuro} alt="futuro" />
                 </div>
                 <h2>Preparação para o Futuro</h2>

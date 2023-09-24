@@ -14,11 +14,12 @@ nav {
         text-shadow: 1px 1px 2px #000;
         text-decoration: none;
         text-transform: uppercase;
-        color: $text-metallic-gold;
+
+        color: $bg-gold;
         font-weight: bold;
         transition: color 0.3s ease-in-out;
         &:hover {
-          color: $bg-gold;
+          color: $text-metallic-gold;
         }
       }
     }
@@ -30,11 +31,12 @@ nav {
     a {
       text-shadow: 1px 1px 2px #000;
       text-decoration: none;
-      color: $text-metallic-gold;
+      color: $bg-gold;
+
       font-weight: bold;
       transition: color 0.3s ease-in-out;
       &:hover {
-        color: $bg-gold;
+        color: $text-metallic-gold;
       }
     }
   }

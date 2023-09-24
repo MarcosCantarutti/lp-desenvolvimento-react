@@ -5,18 +5,19 @@ import Counter from '../../../components/Counter/Counter';
 function Statistics() {
   const statisticsContent = [
     {
-      value: 10,
+      value: 82,
       type: '%',
-      title: 'do lucro',
-      content: 'operacional por investir em cultura.',
+      title: 'dos líderes',
+      content:
+        'compreendem que a Cultura é uma vantagem competitiva potencial.',
       extra: '+',
     },
     {
-      value: 92,
+      value: 94,
       type: '%',
-      title: 'dos membros',
+      title: 'dos profissionais',
       content:
-        'do Conselho revelaram que o foco em Cultura melhorou a performance financeira de suas empresas.',
+        'valorizam empresas que desenvolvem políticas de gestão de pessoas.',
       extra: '',
     },
     {

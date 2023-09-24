@@ -14,13 +14,15 @@ function Home() {
   return (
     <Container className="main-container no-padding">
       <div className="home-container">
-        <h1>Qual o seu desafio de hoje?</h1>
-        <p>
-          VOCÊ ESTÁ PRONTO PARA LEVAR A GESTÃO DE PESSOAS DE SUA EMPRESA PARA O
-          PRÓXIMO NÍVEL E COLHER OS BENEFÍCIOS DE UMA EQUIPE ALTAMENTE ENGAJADA
-          E EFICAZ?
-        </p>
-        <Button className="golden large">FALE COM O ESPECIALISTA</Button>
+        <div className="home-content">
+          <h1>Qual o seu desafio de hoje?</h1>
+          <p>
+            VOCÊ ESTÁ PRONTO PARA LEVAR A GESTÃO DE PESSOAS DE SUA EMPRESA PARA
+            O PRÓXIMO NÍVEL E COLHER OS BENEFÍCIOS DE UMA EQUIPE ALTAMENTE
+            ENGAJADA E EFICAZ?
+          </p>
+          <Button className="golden large">FALE COM O ESPECIALISTA</Button>
+        </div>
       </div>
       {/* <Slideshow {...proprietes}></Slideshow> */}
     </Container>
