@@ -12,6 +12,7 @@ import one from '../../../assets/1.png';
 import two from '../../../assets/2.png';
 import three from '../../../assets/3.png';
 import four from '../../../assets/4.png';
+import five from '../../../assets/5.png';
 // Import Swiper styles
 import 'swiper/css';
 
@@ -183,7 +184,7 @@ function Questions() {
             <div className="questions-container-alternative">
               <div className="container">
                 <div className="img-container">
-                  <img src={futuro} alt="futuro" />
+                  <img src={five} alt="futuro" />
                 </div>
                 <h2>Preparação para o Futuro</h2>
                 <p>
