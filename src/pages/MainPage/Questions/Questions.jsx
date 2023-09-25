@@ -20,8 +20,10 @@ function Questions() {
 
   // Função para verificar e atualizar o tamanho da página
   const verificarTamanhoDaPagina = () => {
-    if (window.innerWidth >= 1000) {
+    if (window.innerWidth >= 1375) {
       setTamanhoDaPagina(4);
+    } else if (window.innerWidth >= 1000) {
+      setTamanhoDaPagina(3);
     } else if (window.innerWidth >= 780) {
       setTamanhoDaPagina(2);
     } else {
@@ -47,7 +49,11 @@ function Questions() {
       <Fade direction={'top'} triggerOnce>
         <span className="divider"></span>
         <h1 className="questions-title">POR QUE ESCOLHER A LP?</h1>
-        <Swiper spaceBetween={50} slidesPerView={tamanhoDaPagina}>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={tamanhoDaPagina}
+          initialSlide={1}
+        >
           <SwiperSlide>
             {' '}
             <div className="questions-container">
@@ -108,7 +114,11 @@ function Questions() {
       </Fade>
       <Fade direction={'top'} triggerOnce>
         <h1 className="questions-title">RETORNOS PARA SUA EMPRESA</h1>
-        <Swiper spaceBetween={50} slidesPerView={tamanhoDaPagina}>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={tamanhoDaPagina}
+          initialSlide={1}
+        >
           <SwiperSlide>
             {' '}
             <div className="questions-container-alternative">

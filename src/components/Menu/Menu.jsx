@@ -14,7 +14,9 @@ function Menu() {
         </li>
         <li>
           {' '}
-          <a href="">Desenvolvimento Humano</a>{' '}
+          <a href="https://lpterapeutas.com/" target="_blank">
+            Desenvolvimento Humano
+          </a>{' '}
         </li>
         <li>
           {' '}

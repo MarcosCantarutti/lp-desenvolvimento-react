@@ -24,7 +24,11 @@ function MobileMenu(props) {
         </li>
         <li>
           {' '}
-          <a href="" onClick={sendDataToParent}>
+          <a
+            href="https://lpterapeutas.com/"
+            target="_blank"
+            onClick={sendDataToParent}
+          >
             Desenvolvimento Humano
           </a>{' '}
         </li>
