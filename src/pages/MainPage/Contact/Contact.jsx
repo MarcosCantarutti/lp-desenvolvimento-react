@@ -37,17 +37,6 @@ function Contact() {
             </div>
             <div>
               <span>
-                <InstagramLogo size={32} />
-              </span>
-              <a
-                href="https://www.instagram.com/paulocantaruttioficial/"
-                target="_blank"
-              >
-                Instagram
-              </a>
-            </div>
-            <div>
-              <span>
                 <LinkedinLogo size={32} />
               </span>
               <a
@@ -58,12 +47,24 @@ function Contact() {
               </a>
             </div>
             <div>
-              <span>
+              {/* <span>
+                <InstagramLogo size={32} />
+              </span>
+              <a
+                href="https://www.instagram.com/paulocantaruttioficial/"
+                target="_blank"
+              >
+                Instagram
+              </a> */}
+            </div>
+
+            <div>
+              {/* <span>
                 <TiktokLogo size={32} />
               </span>
               <a href="https://www.tiktok.com/@paulocantarutti" target="_blank">
                 TikTok
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

@@ -54,6 +54,7 @@ function Questions() {
           spaceBetween={50}
           slidesPerView={tamanhoDaPagina}
           initialSlide={1}
+          loop={true}
         >
           <SwiperSlide>
             {' '}
@@ -119,6 +120,7 @@ function Questions() {
           spaceBetween={50}
           slidesPerView={tamanhoDaPagina}
           initialSlide={1}
+          loop={true}
         >
           <SwiperSlide>
             {' '}

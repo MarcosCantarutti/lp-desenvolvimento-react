@@ -25,7 +25,7 @@ function Menu() {
       </ul>
 
       <ul className="social">
-        <li>
+        {/* <li>
           <a href="">
             <TiktokLogo size={25} />
           </a>
@@ -34,9 +34,9 @@ function Menu() {
           <a href="">
             <InstagramLogo size={25} />
           </a>
-        </li>
+        </li> */}
         <li>
-          <a href="">
+          <a href="https://wa.me/5534999457198" target="_blank">
             <WhatsappLogo size={25} />
           </a>
         </li>

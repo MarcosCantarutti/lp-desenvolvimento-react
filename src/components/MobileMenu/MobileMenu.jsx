@@ -41,7 +41,7 @@ function MobileMenu(props) {
       </ul>
 
       <ul className="mobile-social">
-        <li>
+        {/* <li>
           <a
             href="https://www.instagram.com/paulocantaruttioficial/"
             target="_blank"
@@ -56,9 +56,9 @@ function MobileMenu(props) {
           >
             <InstagramLogo size={25} />
           </a>
-        </li>
+        </li> */}
         <li>
-          <a href="https://www.tiktok.com/@paulocantarutti" target="_blank">
+          <a href="https://wa.me/5534999457198" target="_blank">
             <WhatsappLogo size={25} />
           </a>
         </li>
