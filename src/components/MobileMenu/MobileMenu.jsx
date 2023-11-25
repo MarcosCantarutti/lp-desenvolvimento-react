@@ -24,6 +24,12 @@ function MobileMenu(props) {
         </li>
         <li>
           {' '}
+          <a href="./enviar" onClick={sendDataToParent}>
+            Enviar Currículo
+          </a>{' '}
+        </li>
+        {/* <li>
+          {' '}
           <a
             href="https://lpterapeutas.com/"
             target="_blank"
@@ -31,7 +37,7 @@ function MobileMenu(props) {
           >
             Desenvolvimento Humano
           </a>{' '}
-        </li>
+        </li> */}
         <li>
           {' '}
           <a href="./#contact" onClick={sendDataToParent}>

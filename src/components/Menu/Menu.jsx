@@ -14,10 +14,14 @@ function Menu() {
         </li>
         <li>
           {' '}
+          <a href="./enviar">Enviar Currículo</a>{' '}
+        </li>
+        {/* <li>
+          {' '}
           <a href="https://lpterapeutas.com/" target="_blank">
             Desenvolvimento Humano
           </a>{' '}
-        </li>
+        </li> */}
         <li>
           {' '}
           <a href="./#contact">Contato</a>{' '}

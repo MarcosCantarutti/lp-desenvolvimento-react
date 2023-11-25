@@ -1,0 +1,46 @@
+@import '../../style/index.scss';
+.email {
+  max-width: 50rem;
+  margin: 1rem auto 10rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 15rem;
+  }
+
+  input[type='submit'] {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  input[type='submit']:hover {
+    background-color: $text-metallic-gold;
+    font-weight: bold;
+  }
+}
