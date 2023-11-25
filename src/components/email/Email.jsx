@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-// import emailjs from '@emailjs/browser';
 import './Email.scss';
 
 export const Email = () => {
@@ -10,75 +9,48 @@ export const Email = () => {
 
   const form = useRef();
 
-  const convertFileToBase64 = (file) => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        resolve(reader.result.split(',')[1]);
-      };
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
-  };
-
-  //   const sendEmail = async (e) => {
-  //     e.preventDefault();
-
-  //     const serviceId = 'service_7icl26d';
-  //     const templateId = 'template_c7993vt';
-  //     const publicKey = 'qmSN8-LbgfNJb9sxx';
-
-  //     console.log(file);
-
-  //     try {
-  //       let content = null;
-  //       if (file) {
-  //         content = await convertFileToBase64(file);
-  //       }
-
-  //       console.log(content);
-
-  //       const templateParams = {
-  //         from_name: name,
-  //         from_email: email,
-  //         to_name: 'Paulo Cantarutti',
-  //         message: message,
-  //         content: content,
-  //       };
-
-  //       await emailjs.send(serviceId, templateId, templateParams, publicKey);
-
-  //       alert('Obrigado! Seu Email foi enviado!');
-  //       setName('');
-  //       setEmail('');
-  //       setMessage('');
-  //       setFile(null);
-  //     } catch (error) {
-  //       alert(
-  //         'Erro ao enviar! Verifique todos os campos e o tamanho do arquivo anexado.'
-  //       );
-  //       console.error(error);
-  //     }
-  //   };
+  // const convertFileToBase64 = (file) => {
+  //   return new Promise((resolve, reject) => {
+  //     const reader = new FileReader();
+  //     reader.onloadend = () => {
+  //       resolve(reader.result.split(',')[1]);
+  //     };
+  //     reader.onerror = reject;
+  //     reader.readAsDataURL(file);
+  //   });
+  // };
 
   const sendEmail = async (e) => {
     e.preventDefault();
     const apiUrl = 'https://servidor-email-lp.onrender.com';
 
-    const formData = new FormData();
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('message', message);
-    formData.append('file', file);
+    try {
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('email', email);
+      formData.append('message', message);
+      formData.append('file', file);
 
-    const response = await fetch(`${apiUrl}/send-email`, {
-      method: 'POST',
-      body: formData,
-    });
+      const response = await fetch(`${apiUrl}/send-email`, {
+        method: 'POST',
+        body: formData,
+      });
 
-    const result = await response.json();
+      const result = await response.json();
+      // console.log(result);
 
-    console.log(result);
+      if (result.success) {
+        alert('Obrigado! Seu Email foi enviado!');
+        setName('');
+        setEmail('');
+        setMessage('');
+        setFile(null);
+      } else {
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -88,6 +60,7 @@ export const Email = () => {
         className="name"
         type="text"
         name="name"
+        required
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
@@ -96,6 +69,7 @@ export const Email = () => {
         className="email"
         type="email"
         name="email"
+        required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
@@ -103,6 +77,7 @@ export const Email = () => {
       <textarea
         className="message"
         name="message"
+        required
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
