@@ -2,15 +2,19 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Container from '../../components/Container/Container';
 import { Email } from '../../components/email/Email';
+import { useLocation } from 'react-router-dom';
+
 import './Enviar.scss';
 
 function Enviar() {
+  const location = useLocation();
+  const id = location.state.id;
   return (
     <>
       <Header></Header>
       <section className="main-consultoria">
         <Container className="enviar-container">
-          <Email />
+          <Email idRoute={id} />
           <h1>Lei Geral de Proteção de dados (LGPD)</h1>
           <p>
             A LP Desenvolvimento, em sua missão institucional, compromete-se a

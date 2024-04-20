@@ -1,13 +1,18 @@
 import React, { useRef, useState } from 'react';
 import './Email.scss';
 
-export const Email = () => {
+export const Email = (props) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [file, setFile] = useState(null);
 
   const form = useRef();
+
+  // const [idRoute, setIdRoute] = useState('');
+  // if (props.idRoute) {
+  //   setIdRoute(props.idRoute);
+  // }
 
   // const convertFileToBase64 = (file) => {
   //   return new Promise((resolve, reject) => {
@@ -55,7 +60,9 @@ export const Email = () => {
 
   return (
     <form className="email" ref={form} onSubmit={sendEmail}>
+      <span className='candidatura'>Candidatura para: {props.idRoute}</span>
       <label>Nome:</label>
+
       <input
         className="name"
         type="text"
