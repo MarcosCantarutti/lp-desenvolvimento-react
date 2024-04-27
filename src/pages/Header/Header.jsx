@@ -3,7 +3,7 @@ import './Header.scss';
 import { List } from '@phosphor-icons/react';
 import MobileMenu from '../../components/MobileMenu/MobileMenu';
 import Menu from '../../components/Menu/Menu';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo3.png';
 function Header() {
   const [menuOpen, setMenuOpen] = useState('false');
   const toggleMenu = () => {
