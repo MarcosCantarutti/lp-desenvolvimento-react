@@ -27,8 +27,8 @@ export const Email = (props) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    // const apiUrl = 'https://servidor-email-lp.onrender.com';
-    const apiUrl = 'http://localhost:3000';
+    const apiUrl = 'https://servidor-email-lp.onrender.com';
+    // const apiUrl = 'http://localhost:3000';
 
     try {
       const formData = new FormData();
