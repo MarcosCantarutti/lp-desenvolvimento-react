@@ -27,7 +27,8 @@ export const Email = (props) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    const apiUrl = 'https://servidor-email-lp.onrender.com';
+    // const apiUrl = 'https://servidor-email-lp.onrender.com';
+    const apiUrl = 'http://localhost:3000';
 
     try {
       const formData = new FormData();
@@ -60,7 +61,9 @@ export const Email = (props) => {
 
   return (
     <form className="email" ref={form} onSubmit={sendEmail}>
-      <span className='candidatura'>Candidatura para: {props.idRoute}</span>
+      {props && props.id != null && (
+        <span className="candidatura">Candidatura para: {props.id}</span>
+      )}
       <label>Nome:</label>
 
       <input

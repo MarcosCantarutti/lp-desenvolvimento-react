@@ -8,7 +8,7 @@ import './Enviar.scss';
 
 function Enviar() {
   const location = useLocation();
-  const id = location.state.id;
+  const id = location.state && location.state.id;
   return (
     <>
       <Header></Header>

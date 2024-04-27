@@ -44,6 +44,12 @@ function MobileMenu(props) {
             Contato
           </a>{' '}
         </li>
+        <li>
+          {' '}
+          <a href="./vagas" onClick={sendDataToParent}>
+            Vagas
+          </a>{' '}
+        </li>
       </ul>
 
       <ul className="mobile-social">

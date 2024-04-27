@@ -10,29 +10,68 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 50px; /* Reduzi um pouco o espaçamento */
   }
 
   h1 {
     font-size: 30px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   h2 {
     font-size: 25px;
     margin-bottom: 10px;
+    color: #333; /* Adicionei cor ao título */
   }
 
   p {
-    margin: 15px 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    font-size: 20px;
+    margin: 10px 0; /* Reduzi o espaçamento entre os parágrafos */
+    font-size: 18px; /* Reduzi o tamanho da fonte dos parágrafos */
   }
 
   strong {
     font-weight: bold;
+  }
+
+  .voltar-button {
+    display: inline-block;
+    padding: 10px 20px;
+
+    color: #333; /* Cor do texto do botão */
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #000; /* Cor da borda do botão */
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cores */
+
+    &:hover {
+      background-color: #000; /* Cor de fundo do botão ao passar o mouse */
+      color: #ffcc00; /* Cor do texto do botão ao passar o mouse */
+    }
+  }
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem; /* Reduzi um pouco o espaçamento */
+}
+
+.spinner-icon {
+  animation: spin 1s linear infinite;
+  color: #fff; /* Defini a cor do ícone de carregamento */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); /* Rotação inicial */
+  }
+  to {
+    transform: rotate(360deg); /* Rotação completa */
   }
 }

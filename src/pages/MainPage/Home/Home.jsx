@@ -13,12 +13,12 @@ function Home() {
   // };
   return (
     <Container className="main-container no-padding">
-      <div className="home-container">
+      <div className="home-container" id="home">
         <div className="home-content">
           <h1>Qual o seu desafio de hoje?</h1>
           <p>
             Faça a sua área de Recursos Humanos um pilar estratégico de
-            resultados, e desenvolta uma Gestão de Pessoas eficiente.
+            resultados, e desenvolva uma Gestão de Pessoas eficiente.
           </p>
           <Button className="golden large">FALE COM O ESPECIALISTA</Button>
         </div>

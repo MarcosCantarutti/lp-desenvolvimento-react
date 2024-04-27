@@ -20,9 +20,9 @@ function Footer() {
           </span>
         </div>
 
-        <div class="whatsapp-btn">
+        <div className="whatsapp-btn">
           <a
-            class="whatsapp-link"
+            className="whatsapp-link"
             href="https://wa.me/5534999457198"
             target="_blank"
           >

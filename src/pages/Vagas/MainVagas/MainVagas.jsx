@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './MainVagas.scss';
 import { createClient } from '@supabase/supabase-js';
 import { useNavigate } from 'react-router-dom';
-
+import { Spinner } from '@phosphor-icons/react';
 function MainVagas() {
   const supabase = createClient(
     import.meta.env.VITE_SUPABASE_URL,
@@ -10,6 +10,7 @@ function MainVagas() {
   );
 
   const [vagas, setVagas] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // Estado de carregamento
   const navigateTo = useNavigate(); // Inicializa o hook useHistory
 
   useEffect(() => {
@@ -17,8 +18,10 @@ function MainVagas() {
   }, []);
 
   async function getVagas() {
+    setIsLoading(true); // Ativa o estado de carregamento
     const { data } = await supabase.from('vagas').select();
     setVagas(data);
+    setIsLoading(false); // Desativa o estado de carregamento após o carregamento ser concluído
   }
 
   function VagaItem({ vaga }) {
@@ -30,41 +33,34 @@ function MainVagas() {
       >
         <h2>{vaga.title}</h2>
         <p>
-          <strong>Empresa:</strong> {vaga.company}
+          <strong>Modalidade:</strong> {vaga.modality}
         </p>
-        {/* <p>
-          <strong>Data de Criação:</strong> {vaga.created_at}
-        </p> */}
+
         <p>
-          <strong>Vaga:</strong> {vaga.job}
+          <strong>Tipo de contrato:</strong> {vaga.contract_type}
         </p>
         <p>
-          <strong>Descrição:</strong> {vaga.description}
+          <strong>Cidade:</strong> {vaga.city}
         </p>
-        {/* <p>
-          <strong>Responsabilidades:</strong> {vaga.responsibilities}
-        </p>
-        <p>
-          <strong>Requisitos:</strong> {vaga.requirements}
-        </p>
-        <p>
-          <strong>Mais Informações:</strong> {vaga.more_information}
-        </p> */}
       </div>
     );
   }
 
   function handleClick(vagaId) {
-    navigateTo(`/vagas/${vagaId}`); // Redireciona para a rota 'vagas/id' do item clicado
+    navigateTo(`/vagas/${vagaId}`);
   }
 
   return (
     <section className="main-consultoria">
       <div className="lista-de-vagas">
         <h1>Vagas ativas no momento</h1>
-        {vagas.map((vaga) => (
-          <VagaItem vaga={vaga} />
-        ))}
+        {isLoading ? ( // Verifica se está carregando
+          <div className="loading-spinner">
+            <Spinner className="spinner-icon" size={64} />
+          </div>
+        ) : (
+          vagas.map((vaga) => <VagaItem vaga={vaga} />)
+        )}
       </div>
     </section>
   );
