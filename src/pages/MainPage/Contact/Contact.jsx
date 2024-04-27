@@ -31,8 +31,8 @@ function Contact() {
               <span>
                 <EnvelopeSimple size={32} />
               </span>
-              <a href="mailto:contatolp.desenvolvimento@gmail.com">
-                contatolp.desenvolvimento@gmail.com
+              <a href="mailto:contato@lpdesenvolvimento.com.br">
+                contato@lpdesenvolvimento.com.br
               </a>
             </div>
             <div>
