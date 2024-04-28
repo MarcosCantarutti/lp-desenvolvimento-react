@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom'; // Importe o componente Link
+import { useParams, Link } from 'react-router-dom';
 import { createClient } from '@supabase/supabase-js';
 import './MainVagasDetalhes.scss';
 import ButtonCurriculo from '../../../components/Button/ButtonCurriculo';
@@ -58,37 +58,41 @@ function MainVagasDetalhes() {
       <div className="detalhes-vaga">
         <h1>Detalhes da Vaga</h1>
         <h2>{vaga.title}</h2>
-        {/* <p>
-          <strong>Empresa:</strong> {vaga.company}
-        </p> */}
-        <p>
-          <strong>Cidade: </strong>
-          <br></br> {vaga.city}
-        </p>
-        <p>
-          <strong>Tipo de contrato: </strong>
-          <br></br> {vaga.contract_type}
-        </p>
-        <p>
-          <strong>Modalidade: </strong>
-          <br></br> {vaga.modality}
-        </p>
-        <p>
-          <strong>Principais atividades: </strong>
-          <br></br> {vaga.responsibilities}
-        </p>
-        <p>
-          <strong>Benefícios: </strong>
-          <br></br> {vaga.benefits}
-        </p>
-        <p>
-          <strong>Requisitos: </strong>
-          <br></br> {vaga.requiriments}
-        </p>
-        <p>
-          <strong>Mais informações: </strong>
-          <br></br> {vaga.more_information}
-        </p>
+        <div>
+          <strong>Cidade:</strong>
+          <br />
+          <pre>{vaga.city}</pre>
+        </div>
+        <div>
+          <strong>Tipo de contrato:</strong>
+          <br />
+          <pre>{vaga.contract_type}</pre>
+        </div>
+        <div>
+          <strong>Modalidade:</strong>
+          <br />
+          <pre>{vaga.modality}</pre>
+        </div>
+        <div>
+          <strong>Principais atividades:</strong>
+          <br />
+          <pre>{vaga.responsibilities}</pre>
+        </div>
+        <div>
+          <strong>Benefícios:</strong>
+          <br />
+          <pre>{vaga.benefits}</pre>
+        </div>
+        <div>
+          <strong>Requisitos:</strong>
+          <br />
+          <pre>{vaga.requiriments}</pre>
+        </div>
+        <div>
+          <strong>Mais informações:</strong>
+          <br />
+          <pre> {vaga.more_information}</pre>
+        </div>
 
         <div className="button-enviar">
           <Link to="/vagas" className="voltar-button">
