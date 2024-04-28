@@ -6,6 +6,6 @@
     { "src": "/vagas", "dest": "/" },
     { "src": "/vagas/(.*)", "dest": "/" },
     { "handle": "filesystem" },
-    { "src": "/NotFound", "status": 404, "dest": "/" }
+    { "src": "/notfound", "status": 404, "dest": "/" }
   ]
 }
