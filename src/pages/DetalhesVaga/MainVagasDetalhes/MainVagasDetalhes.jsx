@@ -54,7 +54,6 @@ function MainVagasDetalhes() {
             Voltar para lista
           </Link>
         </div>
-        ;
       </section>
     );
   }
