@@ -5,8 +5,10 @@
     { "src": "/enviar", "dest": "/" },
     { "src": "/vagas", "dest": "/" },
     { "src": "/vagas/(.*)", "dest": "/" },
-    { "src": "/notfound", "dest": "/" }
+    { "src": "/notfound", "dest": "/" },
     { "handle": "filesystem" },
     { "src": "/(.*)", "status": 404, "dest": "/notfound" }
-  ]
+  ],
+
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
