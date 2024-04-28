@@ -4,7 +4,7 @@
     { "src": "/consultoria", "dest": "/" },
     { "src": "/enviar", "dest": "/" },
     { "src": "/vagas", "dest": "/" },
-    { "src": "/vagas/([^/]+)", "dest": "/vagas?id=$1" },
+    { "src": "/vagas?id=$1", "dest": "/" },
     { "src": "/(.*)", "status": 404, "dest": "/" }
   ]
 }
