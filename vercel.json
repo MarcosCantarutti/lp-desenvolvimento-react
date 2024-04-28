@@ -4,6 +4,6 @@
     { "src": "/consultoria", "dest": "/" },
     { "src": "/enviar", "dest": "/" },
     { "src": "/vagas", "dest": "/" },
-    { "src": "/vagas/$1", "dest": "/" }
+    { "src": "/vagas/(.*)", "dest": "/" }
   ]
 }
