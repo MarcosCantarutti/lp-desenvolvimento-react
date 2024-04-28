@@ -4,6 +4,8 @@
     { "src": "/consultoria", "dest": "/" },
     { "src": "/enviar", "dest": "/" },
     { "src": "/vagas", "dest": "/" },
-    { "src": "/vagas/(.*)", "dest": "/" }
+    { "src": "/vagas/(.*)", "dest": "/" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "status": 404, "dest": "/" }
   ]
 }
