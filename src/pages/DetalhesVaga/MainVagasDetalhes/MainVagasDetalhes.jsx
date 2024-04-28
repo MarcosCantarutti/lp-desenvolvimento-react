@@ -48,7 +48,13 @@ function MainVagasDetalhes() {
   if (!vaga) {
     return (
       <section className="main-consultoria">
-        <div>Não foi possível carregar os detalhes da vaga.</div>;
+        <div className="detalhes-vaga">
+          <h1>Vaga não localizada</h1>
+          <Link to="/vagas" className="voltar-button">
+            Voltar para lista
+          </Link>
+        </div>
+        ;
       </section>
     );
   }
