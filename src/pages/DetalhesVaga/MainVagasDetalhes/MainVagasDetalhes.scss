@@ -21,6 +21,19 @@
     max-height: 200px;
   }
 
+  pre::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  pre::-webkit-scrollbar-thumb {
+    background-color: #d4af37;
+    border-radius: 5px;
+  }
+
+  pre::-webkit-scrollbar-track {
+    background-color: #eee;
+  }
+
   h1 {
     font-size: 30px;
     margin-bottom: 20px;
