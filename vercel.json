@@ -6,7 +6,5 @@
     { "src": "/vagas", "dest": "/" },
     { "src": "/vagas/(.*)", "dest": "/" },
     { "src": "/notfound", "dest": "/" }
-  ],
-
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  ]
 }
