@@ -1,0 +1,159 @@
+.detalhes-vaga {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .button-enviar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 50px;
+  }
+
+  pre {
+    overflow: auto;
+    max-width: 100%;
+    max-height: 200px;
+  }
+
+  pre::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  pre::-webkit-scrollbar-thumb {
+    background-color: #d4af37;
+    border-radius: 5px;
+  }
+
+  pre::-webkit-scrollbar-track {
+    background-color: #eee;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+  }
+
+  h2 {
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  div {
+    margin: 10px 0;
+    font-size: 18px;
+    word-wrap: break-word;
+    max-width: 100%;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  .voltar-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: #000;
+      color: #ffcc00;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .detalhes-vaga {
+    max-width: 900px;
+    padding: 10px;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    div {
+      font-size: 16px;
+    }
+
+    .button-enviar {
+      margin-top: 30px;
+    }
+
+    .button-enviar {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .detalhes-vaga {
+    max-width: 350px;
+    padding: 10px;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    div {
+      font-size: 16px;
+    }
+
+    .button-enviar {
+      margin-top: 30px;
+    }
+
+    .button-enviar {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.spinner-icon {
+  animation: spin 1s linear infinite;
+  color: #fff;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

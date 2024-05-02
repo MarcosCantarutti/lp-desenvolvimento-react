@@ -4,9 +4,18 @@ button {
   text-transform: uppercase;
   transition: color 0.3s ease-in-out;
 
+  a svg,
   svg {
     margin-right: 1rem;
     margin-left: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -41,4 +50,23 @@ button {
 }
 .golden:active {
   transform: scale(0.95);
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    color: #d4af37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #fff;
+    }
+  }
+  &:hover {
+    color: #fff;
+    background-color: transparent;
+  }
 }

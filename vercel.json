@@ -1,6 +1,10 @@
 {
   "routes": [
     { "src": "/", "dest": "/" },
-    { "src": "/consultoria", "dest": "/" }
+    { "src": "/consultoria", "dest": "/" },
+    { "src": "/enviar", "dest": "/" },
+    { "src": "/vagas", "dest": "/" },
+    { "src": "/vagas/(.*)", "dest": "/" },
+    { "src": "/notfound", "dest": "/" }
   ]
 }

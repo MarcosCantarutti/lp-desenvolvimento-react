@@ -1,0 +1,60 @@
+@import '../../../style/index.scss';
+
+.statistics-container {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
+
+  .statistics-main {
+    display: grid;
+    // grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    max-width: 60rem;
+    margin: 2rem;
+
+    .value {
+      color: $text-metallic-gold;
+      font-size: 8rem;
+      //   font-family: Matter;
+      font-size: 90px;
+      font-weight: 700;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.11;
+      letter-spacing: -2.49px;
+    }
+    .title {
+      font-family: Manrope;
+      font-size: 4.6rem;
+      line-height: 1.26;
+      letter-spacing: -0.3px;
+      color: #fff;
+    }
+
+    .content {
+      font-family: Manrope;
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.75;
+      letter-spacing: normal;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .statistics-container {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+}

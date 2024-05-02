@@ -1,0 +1,102 @@
+.lista-de-vagas {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+
+  .spinner-icon {
+    color: #000;
+    animation: spin 1s linear infinite; /* Adiciona a animação de rotação */
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg); /* Rotação inicial */
+    }
+    to {
+      transform: rotate(360deg); /* Rotação completa */
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .vaga-item {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+    transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+      transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Curva de animação mais suave */
+
+    &:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 25px;
+      border-bottom: 2px solid #ccc; /* Adiciona borda inferior */
+      padding-bottom: 10px; /* Adiciona espaçamento abaixo do título */
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  .pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .pagination button:hover {
+    background-color: #ffcc00;
+  }
+
+  .pagination button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
