@@ -25,6 +25,7 @@ function MainVagas() {
     const { data } = await supabase
       .from('vagas')
       .select()
+      .eq('active', true)
       .range((page - 1) * perPage, page * perPage - 1);
     setVagas(data);
     setIsLoading(false);
