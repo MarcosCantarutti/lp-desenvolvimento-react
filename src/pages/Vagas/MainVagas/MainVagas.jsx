@@ -14,11 +14,12 @@ function MainVagas() {
   const [isLoading, setIsLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [perPage] = useState(10); // Limite por pagina
+  const [searchTerm, setSearchTerm] = useState(''); // filtro de busca
   const navigateTo = useNavigate();
 
   useEffect(() => {
     getVagas();
-  }, [page]);
+  }, [page, searchTerm]);
 
   async function getVagas() {
     setIsLoading(true);
@@ -26,6 +27,7 @@ function MainVagas() {
       .from('vagas')
       .select()
       .eq('active', true)
+      .ilike('title', `%${searchTerm}%`)
       .range((page - 1) * perPage, page * perPage - 1);
     setVagas(data);
     setIsLoading(false);
@@ -74,6 +76,13 @@ function MainVagas() {
     <section className="main-consultoria">
       <div className="lista-de-vagas">
         <h1>Vagas ativas no momento</h1>
+        <input
+          type="text"
+          placeholder="Buscar vaga"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-input"
+        />
         {isLoading ? (
           <div className="loading-spinner">
             <Spinner className="spinner-icon" size={64} />

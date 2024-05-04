@@ -19,6 +19,16 @@
     animation: spin 1s linear infinite; /* Adiciona a animação de rotação */
   }
 
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+  }
+
   @keyframes spin {
     from {
       transform: rotate(0deg); /* Rotação inicial */
