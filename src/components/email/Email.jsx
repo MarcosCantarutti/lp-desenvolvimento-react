@@ -1,35 +1,24 @@
 import React, { useRef, useState } from 'react';
 import './Email.scss';
+import { Spinner } from '@phosphor-icons/react';
 
 export const Email = (props) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [file, setFile] = useState(null);
+  const [isSubmitting, setIsSubmitting] = useState(false); // Estado para controlar o envio
 
   const form = useRef();
 
-  // const [idRoute, setIdRoute] = useState('');
-  // if (props.idRoute) {
-  //   setIdRoute(props.idRoute);
-  // }
-
-  // const convertFileToBase64 = (file) => {
-  //   return new Promise((resolve, reject) => {
-  //     const reader = new FileReader();
-  //     reader.onloadend = () => {
-  //       resolve(reader.result.split(',')[1]);
-  //     };
-  //     reader.onerror = reject;
-  //     reader.readAsDataURL(file);
-  //   });
-  // };
-
   const sendEmail = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return; // Se já estiver enviando, não fazer nada
+
+    setIsSubmitting(true); // Define que está enviando
+
     const apiUrl = 'https://servidor-email-lp.onrender.com';
     // const apiUrl = 'http://localhost:3000';
-
     try {
       const formData = new FormData();
       formData.append('name', name);
@@ -43,7 +32,6 @@ export const Email = (props) => {
       });
 
       const result = await response.json();
-      // console.log(result);
 
       if (result.success) {
         alert('Obrigado! Seu Email foi enviado!');
@@ -56,6 +44,8 @@ export const Email = (props) => {
       }
     } catch (error) {
       console.error(error);
+    } finally {
+      setIsSubmitting(false); // Quando a requisição terminar, redefine que não está mais enviando
     }
   };
 
@@ -97,7 +87,12 @@ export const Email = (props) => {
         name="file"
         onChange={(e) => setFile(e.target.files[0])}
       />
-      <input type="submit" value="ENVIAR" />
+      <input
+        type="submit"
+        value={isSubmitting ? 'ENVIANDO...' : 'ENVIAR'}
+        disabled={isSubmitting}
+        style={{ cursor: isSubmitting ? 'wait' : 'pointer' }}
+      />
     </form>
   );
 };
