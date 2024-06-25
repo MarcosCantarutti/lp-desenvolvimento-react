@@ -1,0 +1,42 @@
+.enviar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    color: gold;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
+  p {
+    color: white;
+    max-width: 120rem;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .enviar-container {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .enviar-container {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

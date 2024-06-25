@@ -31,19 +31,8 @@ function Contact() {
               <span>
                 <EnvelopeSimple size={32} />
               </span>
-              <a href="mailto:contatolp.desenvolvimento@gmail.com">
-                contatolp.desenvolvimento@gmail.com
-              </a>
-            </div>
-            <div>
-              <span>
-                <InstagramLogo size={32} />
-              </span>
-              <a
-                href="https://www.instagram.com/paulocantaruttioficial/"
-                target="_blank"
-              >
-                Instagram
+              <a href="mailto:contato@lpdesenvolvimento.com.br">
+                contato@lpdesenvolvimento.com.br
               </a>
             </div>
             <div>
@@ -58,12 +47,24 @@ function Contact() {
               </a>
             </div>
             <div>
-              <span>
+              {/* <span>
+                <InstagramLogo size={32} />
+              </span>
+              <a
+                href="https://www.instagram.com/paulocantaruttioficial/"
+                target="_blank"
+              >
+                Instagram
+              </a> */}
+            </div>
+
+            <div>
+              {/* <span>
                 <TiktokLogo size={32} />
               </span>
               <a href="https://www.tiktok.com/@paulocantarutti" target="_blank">
                 TikTok
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

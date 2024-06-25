@@ -12,16 +12,13 @@ function Services() {
           <div className="services-text">
             <h1>Nossa cultura impulsiona o que fazemos</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              voluptate dolores, molestias tenetur ratione velit consequuntur
-              nemo illum qui necessitatibus suscipit quibusdam id. Quo pariatur
-              blanditiis quibusdam nemo officiis adipisci!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              voluptate dolores, molestias tenetur ratione velit consequuntur
-              nemo illum qui necessitatibus suscipit quibusdam id. Quo pariatur
-              blanditiis quibusdam nemo officiis adipisci!
+              Nossos especialistas são multidisciplinares com formações sólidas
+              em administração de empresas, psicologia, mba em gestão de
+              pessoas, business coaching, gestão por competência, análise
+              comportamental e diversas outras formações complementares.
+              <br />
+              Combinando conhecimentos teóricos e uma vasta e sólida experiência
+              em grandes empresas.
             </p>
 
             <Button className="golden large">ENTRAR EM CONTATO</Button>

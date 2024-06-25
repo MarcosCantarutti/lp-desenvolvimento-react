@@ -1,0 +1,17 @@
+.working-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  // z-index: 9999;
+  background-image: url('../../assets/logo.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  h1 {
+    font-size: 8rem;
+    color: white;
+    margin-bottom: 30rem;
+  }
+}

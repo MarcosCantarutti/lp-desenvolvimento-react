@@ -1,0 +1,29 @@
+.not-found {
+  text-align: center;
+  justify-content: center;
+  color: white;
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  border: 2px dashed white;
+  padding: 5rem;
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  button {
+    padding: 2rem;
+    background-color: transparent;
+    color: white;
+    border: white 1px solid;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

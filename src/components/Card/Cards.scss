@@ -1,22 +1,28 @@
 @import '../../style/index.scss';
+$card-background-color: #1a1a1a;
+$card-border-color: rgba(255, 255, 255, 0.1);
+$card-text-color: $text-white;
+$button-hover-background-color: #ffc107; // Cor amarela
+$button-hover-border-color: transparent;
 .card {
-  background-color: #151515;
-  color: $text-white;
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: $card-background-color;
+  color: $card-text-color;
+  border-radius: 8px;
+  border: 2px solid $card-border-color;
   overflow: hidden;
   width: 30rem;
-  padding: 1.5rem;
+  min-height: 20rem; // Ajuste de acordo com o conteúdo
+  padding: 2rem;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
+  transition: box-shadow 0.3s ease;
 
   h1 {
     font-size: 2.5rem;
+    text-transform: uppercase;
   }
 
   p {
@@ -24,20 +30,22 @@
   }
 
   button {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-decoration: none;
     text-transform: uppercase;
-    background: none;
-    padding: 1rem;
-    color: $text-metallic-gold;
-    border-color: $text-metallic-gold;
-    border: 1px solid;
-    transition: ease-in-out 0.5s;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    color: $text-white;
+    border: 2px solid $button-hover-background-color;
+    border-radius: 30px;
     font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease,
+      border-color 0.3s ease;
     &:hover {
-      color: $text-white;
-      background-color: $text-metallic-gold;
-      border-color: $text-white;
+      background-color: $button-hover-background-color;
+      color: #1a1a1a;
+      border-color: transparent;
     }
   }
 }
