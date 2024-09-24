@@ -28,6 +28,7 @@ function MainVagas() {
       .select()
       .eq('active', true)
       .ilike('title', `%${searchTerm}%`)
+      .order('created_at', { ascending: false })
       .range((page - 1) * perPage, page * perPage - 1);
     setVagas(data);
     setIsLoading(false);
