@@ -1,37 +1,36 @@
 import './About.scss';
 import { Fade } from 'react-awesome-reveal';
 import Container from '../../../components/Container/Container';
-import bg from '../../../assets/bg.jpg';
+import about_1 from '../../../assets/about-1.jpg';
+import Button from '../../../components/Button/Button';
 function About() {
-  const proprietes = {
-    duration: 5000,
-    transitionDuration: 500,
-    infinite: true,
-    indicators: false,
-    arrows: false,
-  };
+  // const proprietes = {
+  //   duration: 5000,
+  //   transitionDuration: 500,
+  //   infinite: true,
+  //   indicators: false,
+  //   arrows: false,
+  // };
   return (
     <Container className="main-container">
       <Fade direction={'left'} triggerOnce>
         <div className="about-container" id="about">
           <div className="about-image">
-            <img src={bg} alt="" />
+            <img src={about_1} alt="" />
           </div>
           <div className="about-text">
-            <h1>QUEM SOMOS?</h1>
+            <h1>Nossa Consultoria</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              voluptate dolores, molestias tenetur ratione velit consequuntur
-              nemo illum qui necessitatibus suscipit quibusdam id. Quo pariatur
-              blanditiis quibusdam nemo officiis adipisci!
+              Nossos especialistas são multidisciplinares com formações sólidas
+              em administração de empresas, psicologia, mba em gestão de
+              pessoas, business coaching, gestão por competência, análise
+              comportamental e diversas outras formações complementares.
+              <br />
+              Combinando conhecimentos teóricos e uma vasta e sólida experiência
+              em grandes empresas.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              voluptate dolores, molestias tenetur ratione velit consequuntur
-              nemo illum qui necessitatibus suscipit quibusdam id. Quo pariatur
-              blanditiis quibusdam nemo officiis adipisci!
-            </p>
-            {/* <Button className="golden large">ENTRAR EM CONTATO</Button> */}
+
+            <Button className="golden large">ENTRAR EM CONTATO</Button>
           </div>
         </div>
       </Fade>

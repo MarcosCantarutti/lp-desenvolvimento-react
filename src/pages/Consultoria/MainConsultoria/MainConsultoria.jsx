@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Card from '../../../components/Card/Card';
 import './MainConsultoria.scss';
 import cardsContent from './CardsContent';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 function MainConsultoria() {
   // Conteudo
   const [users, setUsers] = useState([]);
